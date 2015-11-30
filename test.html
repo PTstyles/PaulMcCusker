@@ -15,16 +15,34 @@ code {
   padding: 24px 15px;
   text-align: center;
 }
+
+nav ul          { display: none;
+                           list-style: none;
+                           margin: 0;
+                           padding: 0; }
+         nav:hover ul    { display: block; }
+         nav ul li       { border-top: 2px solid RoyalBlue;
+                           background-color: white;
+                           width: 10em;
+                           color: black; }
+nav ul li:hover { background-color: PowderBlue; }
+
 header,
 section,
 aside,
 footer {
   margin: 0 1.5% 24px 1.5%;
 }
+
 section {
   display: inline-block;
   width: 30%;
 }
+content{
+text-align:center;
+position: relative;
+width: 19%;
+display: inline-block}
 footer {
   margin-bottom: 0;
 }
@@ -32,12 +50,26 @@ footer {
 </head>
 <body>
 <header>
-  <code>&#60;header&#62;</code>
+<content>
+ <nav><a href="home.html"><h1>Home</h1></a></nav>
+</content>
+<content>
+ <nav><a href="notes.html"><h1>Notes</h1></a></nav>
+</content>
+<content>
+ <nav><a href="links.html"><h1>Links</h1></a></nav>
+</content>
+<content>
+ <nav><a href="code.html"><h1>Code</h1></a></nav>
+</content>
+<content>
+ <nav><a href="contact.html"><h1>Contact</h1></a></nav>
+</content>
 </header>
-
 <section>
   <code>&#60;section&#62; <br> display: <br> inline-block;</code>
-</section><section>
+</section>
+<section>
   <code>&#60;section&#62; <br> display: <br> inline-block;</code>
 </section><section>
   <code>&#60;section&#62; <br> display: <br> inline-block;</code>
