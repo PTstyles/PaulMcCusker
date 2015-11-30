@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- Home Page -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Multicolumns</title>
+      <style type = "text/css">
+      .Image           {display:inline-block;}
+       body            { font-family: arial, sans-serif;
+                           width: 900px;
+                           text-align: center;}
+         picsa {position: absolute;
+                           top: 0px;
+                           left: 10px;
+                           z-index: 1;
+                           width: 300px;}
+         picsb {position: absolute;
+                           top: 0px;
+                           left: 310px;
+                           z-index: 1;
+                           width: 300px;}
+         picsc {position: absolute;
+                           top: 0px;
+                           left: 310px;
+                           z-index: 1;
+                           width:300px; }
+
+         nav             { position: absolute;
+                           top: 0px;
+                           left: 0px;
+                           z-index: 1;
+                           font-weight: bold;
+                           color: white;
+                           border: 2px solid RoyalBlue;
+                           text-align: center;
+                           width: 10em;
+                           background-color: RoyalBlue; }
+         nav ul          { display: none;
+                           list-style: none;
+                           margin: 0;
+                           padding: 0; }
+         nav:hover ul    { display: block; }
+         nav ul li       { border-top: 2px solid RoyalBlue;
+                           background-color: white;
+                           width: 10em;
+                           color: black; }
+         nav ul li:hover { background-color: PowderBlue; }
+         a               { text-decoration: none; }
+         p
+         { margin:0.9em 0em; }
+         .multicolumns
+         { /*setting the position of the columns */
+            position: absolute;
+            top: 1px;
+            left: 0px;
+            z-index: 1;
+            /* setting the number of columns to 3 */
+            -webkit-column-count: 3; 
+            -moz-column-count: 3; 
+            -o-column-count: 3;
+            column-count: 3;
+            /* setting the space between columns to 30px */
+            -webkit-column-gap: 30px;
+            -moz-column-gap: 30px; 
+            -o-column-gap: 30px; 
+            column-gap: 30px;
+            /* adding a 1px black line between each column */
+            -webkit-column-rule: 1px outset black; 
+            -moz-column-rule: 1px outset black; 
+            -o-column-rule: 1px outset black; 
+            column-rule: 1px outset black;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+      </header>
+      <nav>Menu
+         <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">Class Notes</a></li>
+            <li><a href = "#">Links</a></li>
+            <li><a href = "#">Blog</a></li>
+            <li><a href = "#">Contact</a></li>
+         </ul>
+      </nav>
+      
+      <picsa><img src="Images/revleft.jpg" width="290">
+      <picsb><img src="Images/NightElfRight.jpg" width="290">
+      <picsc><img src="Images/GW2BG.png" width="290">
+
+      
+      <div class = "multicolumns">
+         <p>This is a test sentence to see how far accross this goes bla bla bla bla yes win.</p>
+         <p>222222222</p> 
+         <p>333333333</p> 
+         <p>444444444</p>
+         <footer>
+            <em>&copy; Paul McCusker 2015</em>
+         </footer>
+      </div>
+   </body>
+</html>
